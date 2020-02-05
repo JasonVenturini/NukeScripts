@@ -1,9 +1,14 @@
-readnode = nuke.createNode('Read')
-
-nameList = ['Read', 'ColorCorrect', 'Exposure', 'Glow', 'Glint']
-xposit = 50 
+nameList = ['Read', 'ColorCorrect', 'Glow', 'Glint']
+xposit = 60 
 nodeList = []
 
 for i in nameList:
     x = nuke.createNode(i)
-    nodeList.append(x)
+    # nodeList.append(x)
+
+# for i in nodeList:
+#     i['ypos'].setValue(xposit)
+#     xposit = xposit - 10
+#     print(xposit)
+
+# nodeList[3]
